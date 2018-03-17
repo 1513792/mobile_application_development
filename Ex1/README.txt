@@ -1,0 +1,3 @@
+- Chạy home.php
+- Nhập vào marked latitude và marked longitude, nếu muốn đánh dấu một ví trí lên map
+- Nhập tất cả các ô nếu muốn tính khoảng cách giữa 2 điểm trên map
