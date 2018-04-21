@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="refresh">&#xf1fe;</string>
-    <string name="copyright">&#xf1f9;</string>
-    <string name="hintSpinner">Please choose one</string>
-</resources>
