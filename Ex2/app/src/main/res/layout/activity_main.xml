@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50px"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.phamtruong.myapplication.MainActivity">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:id="@+id/above" />
+
+    <TextView
+        android:layout_below="@+id/above"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/inlabel"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_below="@+id/above"
+        android:layout_toRightOf="@+id/inlabel"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:background="@drawable/border_input"
+        android:paddingLeft="10dp"
+        android:hint="Type amount"
+        android:inputType="numberDecimal"
+        android:id="@+id/intxt"
+         />
+
+    <Button
+        android:background="@drawable/circle_btn"
+        android:text="E"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/intxt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="135dp"
+        android:id="@+id/exchange_btn"
+        />
+
+    <Spinner
+        android:layout_below="@+id/exchange_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/below"
+        android:background="@drawable/border"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_below="@+id/below"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/outlabel"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_below="@+id/below"
+        android:layout_toRightOf="@+id/outlabel"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_input"
+        android:id="@+id/result"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/btnInfoColor"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:layout_below="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Update: Today"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Designed by Pham Truong"
+        android:textColor="@color/highlightColor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        />
+</RelativeLayout>
